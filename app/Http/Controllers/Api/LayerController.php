@@ -10,8 +10,7 @@ class LayerController extends Controller
 {
     public function __construct(
         private readonly LayerService $layerService
-    ) {
-    }
+    ) {}
 
     public function index(): JsonResponse
     {

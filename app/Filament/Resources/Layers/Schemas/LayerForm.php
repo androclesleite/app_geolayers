@@ -19,7 +19,7 @@ class LayerForm
 
                 FileUpload::make('geojson_file')
                     ->label('Arquivo GeoJSON')
-                    ->acceptedFileTypes(['application/json', 'application/geo+json'])
+                    ->acceptedFileTypes(['application/json', 'application/geo+json', 'text/plain', '.json', '.geojson'])
                     ->maxSize(10240)
                     ->disk(null)
                     ->directory(null)
